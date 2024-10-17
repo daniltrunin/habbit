@@ -82,7 +82,7 @@ function rerenderMenu(activeHabbit) {
             element.addEventListener('click', () =>
                 rerender(habbit.id)
             );
-            element.innerHTML = `<img src="/images/${habbit.icon}.svg" />`;
+            element.innerHTML = `<img src="./images/${habbit.icon}.svg" />`;
             if (activeHabbit.id === habbit.id) {
                 element.classList.add('menu__item_active');
             }
